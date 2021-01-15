@@ -4,16 +4,16 @@ const router = express.Router()
 const mysql = require('mysql')
 
 const connection = mysql.createConnection({
-  host: '158.247.215.229', //localhost
-  user: 'express_dev',
-  password: '!@#Dlckdfuf141',
-  database: 'express_dev',
+  host: 'address', //localhost
+  user: 'database_user',
+  password: 'database_password',
+  database: 'database_name',
 })
 /* get all user list */
 router.get('/', (req, res, next) => {
   connection.query(
     `SELECT *
-      FROM topic
+      FROM TABLENAME
     ;`,
     (err, result) => {
       res.json(result)
@@ -26,7 +26,7 @@ router.post('/login', (req, res, next) => {
   
   connection.query(
     `SELECT *
-      FROM topic 
+      FROM TABLENAME 
         WHERE id = ?
           AND password = ?
     `,
@@ -48,7 +48,7 @@ router.post('/signup', (req, res, next) => {
   let data = req.body
   connection.query(
     `INSERT
-      INTO topic (
+      INTO TABLENAME (
         id,
         password,
         username
