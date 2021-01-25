@@ -10,12 +10,27 @@ You can make community site this example
 
 
 ## 👫 How to setting Mysql Database?
+
+post_list database setting
+
 ```
 CREATE TABLE `post_list` (
 	`title` VARCHAR(100) NOT NULL COLLATE 'utf8_general_ci',
 	`small_title` VARCHAR(100) NULL COLLATE 'utf8_general_ci',
 	`content` VARCHAR(1000) NULL COLLATE 'utf8_general_ci',
 	PRIMARY KEY (`title`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+```
+
+user_list database setting
+```
+CREATE TABLE `user_info` (
+	`id` VARCHAR(100) NOT NULL COLLATE 'utf8_general_ci',
+	`password` VARCHAR(100) NULL COLLATE 'utf8_general_ci',
+	`username` VARCHAR(100) NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`id`) USING BTREE
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
