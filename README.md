@@ -9,4 +9,14 @@ You can make community site this example
 </div>
 
 
-# 👫 How to setting Mysql Database?
+## 👫 How to setting Mysql Database?
+```
+CREATE TABLE `post_list` (
+	`title` VARCHAR(100) NOT NULL COLLATE 'utf8_general_ci',
+	`small_title` VARCHAR(100) NULL COLLATE 'utf8_general_ci',
+	`content` VARCHAR(1000) NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`title`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+```
