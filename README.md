@@ -24,7 +24,7 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ```
 
-user_list database setting
+user_info database setting
 ```
 CREATE TABLE `user_info` (
 	`id` VARCHAR(100) NOT NULL COLLATE 'utf8_general_ci',
@@ -35,3 +35,8 @@ CREATE TABLE `user_info` (
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ```
+
+## ❔ How to use ?
+###1. Enter 'npm start' at terminal
+###2. Open 'index.html'
+###3. Click F12 and check make it's working
