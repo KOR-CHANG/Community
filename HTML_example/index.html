@@ -16,6 +16,8 @@
       <input type="button" value="Login" class="warp_login" />
       <input type="button" value="Signup" class="warp_signup" />
       <input type="button" value="Userlist" class="get_user_list" />
+      <input type="button" value="Post" class="warp_content" />
+      <input type="button" value="Postlist" class="get_post_list" />
     </div>
 
     <div class="login_wrap">
@@ -33,9 +35,8 @@
       </tr>
       <tr>
         <td>
-          <input class="login" type="button"/>
+          <input class="login" type="button" value="login"/>
         </td>
-        <td></td>
       </tr>
     </div>
 
@@ -60,10 +61,39 @@
       </tr>
       <tr>
         <td>
-          <input class="signup" type="button"/>
+          <input class="signup" type="button" value="signup"/>
         </td>
-        <td></td>
       </tr>
+    </div>
+
+    <span class="content_wrap">
+      <tr>
+        <th>title</th>
+        <td>
+          <textarea class="title" row="10" cols="100"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th>small title</th>
+        <td>
+          <textarea class="small_title" row="10" cols="100"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th>content</th>
+        <td>
+          <textarea class="content_area" row="100" cols="100"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="submit_post" type="button" value="submit"/>
+        </td>
+      </tr>
+    </span>
+    <div class="post_list_wrap">
+      <h2>Post List</h2>
+      <table id="post_list"></table>
     </div>
   </body>
 </html>

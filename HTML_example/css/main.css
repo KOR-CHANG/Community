@@ -2,10 +2,27 @@
   margin: 0;
   padding: 0;
 }
-
+textarea{
+  resize: none;
+}
+.title, .small_title{
+  display: block;
+}
 .login_wrap {
   display: none;
 }
 .signup_wrap {
   display: none;
+}
+.content_wrap{
+  display: none;
+}
+
+.content_wrap > .content_area{
+  word-break: break-all;
+  display: block;
+}
+.post_list_wrap{
+  width: 100%;
+  height: auto;
 }
