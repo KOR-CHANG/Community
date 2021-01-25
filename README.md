@@ -38,5 +38,7 @@ ENGINE=InnoDB
 
 ## ❔ How to use ?
 ###1. Enter 'npm start' at terminal
+
 ###2. Open 'index.html'
+
 ###3. Click F12 and check make it's working
